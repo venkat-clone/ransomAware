@@ -1,1 +1,12 @@
 /backendApis/malware.db
+/sridherCode/BackupTmp/
+/sridherCode/tmp_dir/
+/frontend/backup_tmp/
+/frontend/__main__.spec
+/frontend/build/
+/frontend/dist/
+/backendApis/TMP_FileToDecrypt.txt
+/backendApis/TMP_FileToDecrypt.txt.dec
+/backendApis/TMP_RansomNote.txt
+/backendApis/decoded_text.txt
+/backendApis/private.bin
