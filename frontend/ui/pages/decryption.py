@@ -52,7 +52,7 @@ class DecryptionPage(StatusTextTemplate):
                 self.encryptedFile, open(self.encryptedFile, 'rb'),
                 'application/octet-stream'))
         ]
-        self.updateStatus('Uploading files to decrypting.....')
+        self.updateStatus('Uploading files to decrypt.....')
         response = request("POST", url, files=files)
         self.updateStatus(f'file decrypted & downloaded at {self.encryptedFile}.dec')
         with open(f"{self.encryptedFile}.dec", 'wb') as file:
@@ -82,10 +82,10 @@ class DecryptionPage(StatusTextTemplate):
             controls=[
                 ft.Text("Decrypt", size=16, weight=ft.FontWeight.W_700, color=ft.colors.WHITE),
                 ft.Text(testStr),
-                AppFilePicker(onSelected=self.pickEncryptedFile, type=FileType.File, hint_text="select File Wanted to "
-                                                                                               "decrypt"),
                 AppFilePicker(onSelected=self.pickRansomNote, type=FileType.File, hint_text="select RansomNote"),
 
+                AppFilePicker(onSelected=self.pickEncryptedFile, type=FileType.File, hint_text="select File Wanted to "
+                                                                                               "decrypt"),
                 ft.Container(
                     alignment=ft.alignment.center,
                     content=LoadingButton(onTap=self.startDecrypt, btnText="Decrypt")

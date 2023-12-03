@@ -7,9 +7,9 @@ from ui.widgets.filepicker import AppFilePicker, FileType
 from ui.widgets.loadingButton import LoadingButton
 from ui.widgets.statusTextTemplate import StatusTextTemplate
 
-testStr = """To keep your files safe from ransomware keep your files in a safe environment with encryption \n we are 
-providing a backup service to keep your files away from your computer and in a safe environment \n please enter your 
-email and password for mega and select dir which contains important information"""
+testStr = """You can upload any file to your Mega Cloud service account by encrypting it. Please select a folder and 
+enter the credentials to upload.\nThe key to decrypt will be saved @share the location to decrypt the folder when you 
+want to access files."""
 
 tmpDir = 'backup_tmp'
 key_filename = f"{tmpDir}/fernet_key.key"
