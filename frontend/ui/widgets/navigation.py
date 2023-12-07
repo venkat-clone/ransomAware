@@ -9,7 +9,7 @@ class AppNavigationRail(ft.UserControl):
     def __init__(self):
         super().__init__()
         self.buttons = None
-        self.activeItem = NavigationItems.Prevention
+        self.activeItem = NavigationItems.Decryption
 
     def build(self):
         self.state = ft.Column(

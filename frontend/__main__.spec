@@ -34,10 +34,11 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon=['PC.png'],
 )
 app = BUNDLE(
     exe,
     name='__main__.app',
-    icon=None,
+    icon='PC.png',
     bundle_identifier=None,
 )

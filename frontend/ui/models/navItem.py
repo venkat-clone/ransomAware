@@ -20,12 +20,12 @@ class NavigationItem():
 
 
 class NavigationItems(Enum):
-    Prevention = NavigationItem("Prevention", "Prevention",page=PrecautionPage())
-    Quarantine = NavigationItem("Quarantine", "Quarantine",page=QuarantinePage())
-    Caution = NavigationItem("Caution", "Caution",page=CautionPage())
-    Isolation = NavigationItem("Isolation", "Isolation",page=IsolationPage())
-    Backup = NavigationItem("Backup", "Backup",page=BackupPage())
     Decryption = NavigationItem("Decryption", "Decryption",page=DecryptionPage())
+    Backup = NavigationItem("Backup", "Backup",page=BackupPage())
     FileChecker = NavigationItem("FileChecker", "FileChecker",page=FileCheckerPage())
+    Prevention = NavigationItem("Prevention", "Prevention", page=PrecautionPage())
+    Quarantine = NavigationItem("Quarantine", "Quarantine", page=QuarantinePage())
+    Caution = NavigationItem("Caution", "Caution", page=CautionPage())
+    Isolation = NavigationItem("Isolation", "Isolation", page=IsolationPage())
 
 
