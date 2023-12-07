@@ -1,5 +1,9 @@
 # RansomAware
-
+### Cloning into local system
+```commandline
+git clone https://github.com/venkat-clone/ransomAware
+cd ransomAware
+```
 ### To run Frontend in the dev environment run the following command
 #### for mac & Linux run
 ```commandline
