@@ -40,13 +40,16 @@ class AppFilePicker(UserControl):
 
         def pickFile(e):
             def pick_files_result(e: ft.FilePickerResultEvent):
-                if (e.path is not None):
-                    self.onSelected(e.path)
-                    textField.value = e.path
-                else:
-                    self.onSelected(e.files[0].path)
-                    textField.value = e.files[0].path
-                textField.update()
+                try:
+                    if (e.path is not None):
+                        self.onSelected(e.path)
+                        textField.value = e.path
+                    else:
+                        self.onSelected(e.files[0].path)
+                        textField.value = e.files[0].path
+                    textField.update()
+                except Exception as e:
+                    print(e)
 
             pick_files_dialog = ft.FilePicker(on_result=pick_files_result)
             self.page.overlay.append(pick_files_dialog)

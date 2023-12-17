@@ -5,13 +5,15 @@ class StatusTextTemplate(ft.UserControl):
 
     def __init__(self):
         super().__init__()
-        self.statusText = ft.Text(value="",color=ft.colors.LIGHT_BLUE)
+        self.initStatus()
+
+    def initStatus(self):
+        self.statusText = ft.Text(value="", color=ft.colors.LIGHT_BLUE)
         self.statusContainer = ft.Container(
             content=self.statusText
         )
         self.stack = []
         self.statusContainer.height = 0
-
     def updateStatus(self, status: str, color=None, addToStack: bool = False):
         self.statusContainer.height = None
         if addToStack:

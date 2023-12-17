@@ -53,7 +53,7 @@ class AppNavigationRail(ft.UserControl):
                                 bgcolor="#F3F3F3",
                                 content=ft.Column(
                                     controls=[
-                                        ft.Text("Title",color="#AE445A",size=20,weight=ft.FontWeight.W_700),
+                                        ft.Text("Dashboard",color="#AE445A",size=20,weight=ft.FontWeight.W_700),
                                         self.state
                                     ]
                                 )
