@@ -15,6 +15,9 @@ Results indicate a high success rate in file recovery, efficient performance met
 encapsulates the comprehensive efforts to counter Maze ransomware, providing a versatile
 solution that amalgamates decryption, secure backup, and malware detection for an enhanced
 cybersecurity posture. 
+
+![image](https://github.com/venkat-clone/ransomAware/assets/51732590/9501f9dd-aebf-45ee-b92c-11c4167629b7)
+
 ### Cloning into local system
 ```commandline
 git clone https://github.com/venkat-clone/ransomAware
